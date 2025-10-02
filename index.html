@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa Interactivo de Venezuela</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Serif JP', serif;
+      background: #fdf6f0;
+    }
+
+    #map {
+      height: 100vh;
+      width: 100%;
+      border: 6px solid #e63946;
+    }
+
+    #info {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #fff8f5;
+      padding: 15px;
+      border-radius: 12px;
+      width: 320px;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 2px solid #e63946;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    #info img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border: 2px solid #e63946;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #e63946;
+      font-weight: bold;
+      border-bottom: 2px solid #e63946;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      color: #222;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    .state-tooltip {
+      position: absolute;
+      background: rgba(255, 248, 245, 0.95);
+      border: 2px solid #e63946;
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-weight: bold;
+      pointer-events: none;
+      z-index: 999;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: opacity 0.3s;
+      opacity: 0;
+    }
+
+    /* Pétalos de flor cayendo */
+    .flower-petal {
+      position: fixed;
+      top: -10px;
+      width: 20px;
+      height: 20px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23e63946"><path d="M12,2C13.1,2 14,2.9 14,4C14,5.1 13.1,6 12,6C10.9,6 10,5.1 10,4C10,2.9 10.9,2 12,2M21,9C21.55,9 22,9.45 22,10C22,10.55 21.55,11 21,11H16.53L16.4,12.2L17.15,13.15C17.66,13.66 17.66,14.47 17.15,14.97C14.87,17.25 11.13,17.25 8.85,14.97C8.34,14.47 8.34,13.66 8.85,13.15L9.6,12.2L9.47,11H3C2.45,11 2,10.55 2,10C2,9.45 2.45,9 3,9H9.47C9.6,7.8 10.4,6.8 11.5,6.5V5H10.5C9.95,5 9.5,4.55 9.5,4C9.5,3.45 9.95,3 10.5,3H13.5C14.05,3 14.5,3.45 14.5,4C14.5,4.55 14.05,5 13.5,5H12.5V6.5C13.6,6.8 14.4,7.8 14.53,9H21Z"/></svg>') no-repeat center/contain;
+      animation: fall 10s linear infinite;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    }
+
+    /* Controles de música minimalistas */
+    #music-controls {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: #fff8f5;
+      padding: 8px;
+      border-radius: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      border: 2px solid #e63946;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.3s ease;
+      width: 40px;
+      overflow: hidden;
+    }
+
+    #music-controls:hover {
+      width: 180px;
+    }
+
+    #music-toggle {
+      background: #e63946;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+
+    #music-toggle:hover {
+      background: #d62b3a;
+      transform: scale(1.05);
+    }
+
+    #volume-control {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      width: 0;
+      overflow: hidden;
+    }
+
+    #music-controls:hover #volume-control {
+      opacity: 1;
+      width: 100px;
+    }
+
+    #volume-slider {
+      width: 70px;
+      height: 4px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: #ddd;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    #volume-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #e63946;
+      cursor: pointer;
+    }
+
+    #volume-slider::-moz-range-thumb {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #e63946;
+      cursor: pointer;
+      border: none;
+    }
+
+    .music-info {
+      font-size: 10px;
+      color: #666;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    #music-controls:hover .music-info {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="info"><h2>Haz clic en un estado</h2></div>
+  <div id="tooltip" class="state-tooltip"></div>
+
+  <!-- Pétalos de flor -->
+  <div class="flower-petal" style="left:10%; animation-delay:0s;"></div>
+  <div class="flower-petal" style="left:30%; animation-delay:2s;"></div>
+  <div class="flower-petal" style="left:50%; animation-delay:4s;"></div>
+  <div class="flower-petal" style="left:70%; animation-delay:6s;"></div>
+  <div class="flower-petal" style="left:90%; animation-delay:8s;"></div>
+  
+  <!-- Controles de música minimalistas -->
+  <div id="music-controls">
+    <button id="music-toggle">▶</button>
+    <div id="volume-control">
+      <span style="font-size: 12px;">🔈</span>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+    <div class="music-info">Música Venezolana</div>
+  </div>
+
+  <!-- Elemento de audio para la música de fondo -->
+  <audio id="background-music" loop>
+    <source src="venezuela_music.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Información de los estados de Venezuela
+    const estadosInfo = {
+      "Amazonas": {
+        "capital": "Puerto Ayacucho",
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Amazonas_in_Venezuela.svg/300px-Amazonas_in_Venezuela.svg.png",
+        "cultura": ["Pueblos indígenas como Yanomami, Piaroa y Guahibo", "Festival del Casabe", "Artesanía con semillas y fibras naturales"],
+        "turismo": ["Parque Nacional Yapacana", "Río Orinoco", "Cerro Autana (árbol de la vida)"],
+        "datosCuriosos": ["Es el estado más grande de Venezuela", "Más del 50% de su territorio está protegido", "Hogar de la cascada más alta del mundo: Salto Ángel"]
+      },
+      "Anzoátegui": {
+        "capital": "Barcelona",
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Anzoategui_in_Venezuela.svg/300px-Anzoategui_in_Venezuela.svg.png",
+        "cultura": ["Fiesta de la Cruz de Mayo", "Velorios de Cruz", "Gastronomía basada en pescados y mariscos"],
+        "turismo": ["Playas de Puerto Píritu y Cangrejo", "Parque Nacional Mochima", "Museo de la Tradición de Barcelona"],
+        "datosCuriosos": ["Importante zona petrolera", "Tiene las playas más hermosas del oriente venezolano", "Cuna del poeta Andrés Eloy Blanco"]
+      },
+      "Apure": {
+        "capital": "San Fernando de Apure",
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Apure_in_Venezuela.svg/300px-Apure_in_Venezuela.svg.png",
+        "cultura": ["Joropo llanero", "Coleo de toros", "Festival del Alma Llanera"],
+        "turismo": ["Parque Nacional Santos Luzardo", "Río Apure", "Hatos llaneros para observar fauna"],
+        "datosCuriosos": ["Conocido como el 'Estado Llanero'", "Tiene la mayor población de chigüires del país", "Escenario de la novela 'Doña Bárbara' de Rómulo Gallegos"]
+      }
+      // ... (aquí irían los datos de los demás estados)
+    };
+  </script>
+  <script>
+    // Crear mapa centrado en Venezuela
+    const map = L.map('map').setView([8, -66], 6);
+
+    // Añadir capa base
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19
+    }).addTo(map);
+
+    // Limitar el mapa solo a Venezuela
+    const bounds = [
+      [0.6, -73.4], // suroeste
+      [12.2, -59.4] // noreste
+    ];
+    map.setMaxBounds(bounds);
+    map.fitBounds(bounds);
+
+    // Obtener referencia al tooltip
+    const tooltip = document.getElementById('tooltip');
+
+    // Función para mostrar información
+    function mostrarInfo(nombre) {
+      const info = estadosInfo[nombre];
+      if (info) {
+        // Función helper para generar listas con imágenes opcionales
+        function generarListaConImagenes(items) {
+          return items.map(item => {
+            const contenido = typeof item === 'string' 
+              ? item 
+              : `${item.texto}${item.imagen ? `<br><img src="${item.imagen}" alt="" style="max-width: 100%; height: auto; margin: 5px 0; border-radius: 5px; border: 1px solid #e63946;">` : ''}`;
+            return `<li>${contenido}</li>`;
+          }).join("");
+        }
+
+        document.getElementById('info').innerHTML = `
+          <h2>${nombre}</h2>
+          <img src="${info.imagen}" alt="${nombre}" style="width:100%; border-radius:8px; margin-bottom:10px; border:2px solid #e63946;">
+          <p><b>Capital:</b> ${info.capital}</p>
+          <p><b>Cultura:</b><ul>${generarListaConImagenes(info.cultura)}</ul></p>
+          <p><b>Turismo:</b><ul>${generarListaConImagenes(info.turismo)}</ul></p>
+          <p><b>Datos curiosos:</b><ul>${generarListaConImagenes(info.datosCuriosos)}</ul></p>
+        `;
+      } else {
+        document.getElementById('info').innerHTML = `<h2>${nombre}</h2><p>Información no disponible.</p>`;
+      }
+    }
+
+    // Control de música de fondo
+    const backgroundMusic = document.getElementById('background-music');
+    const musicToggle = document.getElementById('music-toggle');
+    const volumeSlider = document.getElementById('volume-slider');
+    let isMusicPlaying = false;
+
+    // Configurar volumen inicial
+    backgroundMusic.volume = volumeSlider.value;
+
+    // Controlar el volumen
+    volumeSlider.addEventListener('input', function() {
+      backgroundMusic.volume = this.value;
+    });
+
+    // Reproducir o pausar la música
+    musicToggle.addEventListener('click', function() {
+      if (isMusicPlaying) {
+        backgroundMusic.pause();
+        musicToggle.textContent = '▶';
+      } else {
+        backgroundMusic.play().catch(error => {
+          console.log('La reproducción automática fue prevenida:', error);
+        });
+        musicToggle.textContent = '❚❚';
+      }
+      isMusicPlaying = !isMusicPlaying;
+    });
+
+    // Intentar iniciar la música automáticamente
+    window.addEventListener('click', function() {
+      if (!isMusicPlaying) {
+        backgroundMusic.play().then(() => {
+          isMusicPlaying = true;
+          musicToggle.textContent = '❚❚';
+        }).catch(error => {
+          console.log('La reproducción automática fue prevenida:', error);
+        });
+      }
+    }, { once: true });
+
+    // Cargar el GeoJSON de Venezuela
+    fetch("ve.json")
+      .then(res => res.json())
+      .then(data => {
+        L.geoJSON(data, {
+          onEachFeature: (feature, layer) => {
+            const nombreEstado = feature.properties.name;
+            
+            // Evento al pasar el cursor sobre el estado
+            layer.on('mouseover', function(e) {
+              // Cambiar estilo al pasar el cursor
+              layer.setStyle({ fillOpacity: 0.7, fillColor: "#ffcc00" });
+              
+              // Mostrar tooltip con el nombre del estado
+              const latlng = e.latlng;
+              tooltip.innerHTML = nombreEstado;
+              tooltip.style.opacity = '1';
+              
+              // Posicionar el tooltip cerca del cursor
+              const point = map.latLngToContainerPoint(latlng);
+              tooltip.style.left = (point.x + 10) + 'px';
+              tooltip.style.top = (point.y - 25) + 'px';
+            });
+            
+            // Evento al quitar el cursor del estado
+            layer.on('mouseout', function() {
+              // Restaurar estilo original
+              layer.setStyle({ fillOpacity: 0.5, fillColor: "#4a90e2" });
+              
+              // Ocultar tooltip
+              tooltip.style.opacity = '0';
+            });
+            
+            // Evento al hacer clic en el estado
+            layer.on('click', () => mostrarInfo(nombreEstado));
+          },
+          style: {
+            color: "#333",
+            weight: 1.2,
+            fillColor: "#4a90e2",
+            fillOpacity: 0.5
+          }
+        }).addTo(map);
+        
+        // Actualizar la posición del tooltip cuando se mueve el cursor
+        map.on('mousemove', function(e) {
+          const point = map.latLngToContainerPoint(e.latlng);
+          tooltip.style.left = (point.x + 10) + 'px';
+          tooltip.style.top = (point.y - 25) + 'px';
+        });
+      })
+      .catch(err => console.error("Error cargando GeoJSON:", err));
+
+    // Generar pétalos infinitos
+    function crearPetalo() {
+      const petalo = document.createElement('div');
+      petalo.classList.add('flower-petal');
+
+      // posición horizontal aleatoria
+      petalo.style.left = Math.random() * 100 + 'vw';
+
+      // duración y tamaño aleatorios
+      const duracion = 7 + Math.random() * 5; // entre 7 y 12s
+      petalo.style.animationDuration = duracion + 's';
+      const size = 15 + Math.random() * 15; // entre 15px y 30px
+      petalo.style.width = size + 'px';
+      petalo.style.height = size + 'px';
+
+      document.body.appendChild(petalo);
+
+      // eliminarlo cuando termine la animación
+      setTimeout(() => {
+        petalo.remove();
+      }, duracion * 1000);
+    }
+
+    // lanzar pétalos cada 300ms
+    setInterval(crearPetalo, 300);
+  </script>
+</body>
+</html>
