@@ -50,7 +50,7 @@ const estadosInfo = {
     cultura: [
       "Identidad llanera: la vida y la música llanera (joropo, contrapunteo, arpa, cuatro y maracas) son ejes centrales de la cultura regional, junto a la figura del llanero y su tradición ganadera.",
       "Festividades y prácticas: ferias ganaderas, festivales de música llanera y celebraciones religiosas que mezclan rituales rurales y ocio comunitario.",
-      "Gastronomía"
+      "Gastronomía",
       "Rasgos generales: cocina llanera basada en productos de la ganadería y de ríos; abundan las preparaciones a la brasa y a la leña, guisos y acompañamientos con arepas y casabe.",
       "Platos típicos destacados: carne en vara (carne asada al palo), pisillo de chigüire (preparado con capibara donde se consume), carne mechada a la llanera, y guisos de pescado de río.",
       "Acompañamientos y derivados: arepas, casabe (yuca), bollos y preparaciones con plátano y tubérculos; salsas y guarniciones sencillas que resaltan el sabor de la carne y el pescado.",
@@ -63,7 +63,7 @@ const estadosInfo = {
       "Áreas protegidas y zonas naturales: reservas y paisajes llaneros que ofrecen observación de fauna y escenas típicas de los llanos venezolanos."
     ],
     datosCuriosos: [
-      "Apure representa el corazón de los llanos venezolanos y es conocido por sus horizontes abiertos, paisaje que ha modelado una identidad nacional ligada a la figura del llanero."
+      "Apure representa el corazón de los llanos venezolanos y es conocido por sus horizontes abiertos, paisaje que ha modelado una identidad nacional ligada a la figura del llanero.",
       "La hidrografía del estado (ríos caudalosos como el Apure) condiciona gran parte de la economía, transporte y calendario de actividades rurales."
     ]
   },
