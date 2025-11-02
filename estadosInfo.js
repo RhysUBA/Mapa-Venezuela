@@ -2,7 +2,7 @@ const estadosInfo = {
   "Amazonas": {
     capital: "Puerto Ayacucho",
     superficie: "176.899 km²",
-    población: "137,000 habitantes",
+    poblacion: "137,000 habitantes",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Amazonas_in_Venezuela.svg/300px-Amazonas_in_Venezuela.svg.png",
     cultura: [
       "Riqueza étnica: Predomina una fuerte presencia de pueblos indígenas (como los piaroa, yanomami, warao y yekuana), cuya cosmovisión, ceremonias, artesanía y sistemas de parentesco configuran la vida cultural regional.",
@@ -24,40 +24,47 @@ const estadosInfo = {
   },
   "Anzoátegui": {
     capital: "Barcelona",
+    superficie: "43.300 km²",
+    poblacion: "~1,2 millones",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Anzoategui_in_Venezuela.svg/300px-Anzoategui_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de la Cruz de Mayo",
-      "Velorios de Cruz",
-      "Gastronomía basada en pescados y mariscos"
+      "Identidad: mezcla de tradición costera (pescadores y festividades marinas) con fuerte influencia de la industria petrolera; expresiones folclóricas y religiosas locales, incluyendo celebraciones en honor a la Virgen del Valle. Gastronomía: platos a base de pescado y mariscos frescos; cocina influida por el litoral y las prácticas de pesca regional.",
+      "Gastronomía: La cocina de Anzoátegui combina productos del litoral, la montaña y la llanura; platos frecuentes son empanadas (de cazón, queso, carne mechada, pollo), pescados y mariscos frescos, arepas rellenas, guisos costeños y preparaciones con tubérculos y frutas tropicales. La variedad refleja la posición geográfica del estado entre costa y sierra y la influencia de la tradición oriental venezolana."
     ],
     turismo: [
-      "Playas de Puerto Píritu y Cangrejo",
-      "Parque Nacional Mochima",
-      "Museo de la Tradición de Barcelona"
+      "Isla de Margarita (acceso desde puertos cercanos) y playas del litoral anzoatiguense: playas populares para turismo de sol y mar.",
+      "Puerto La Cruz y Lechería (bordes costeros y malecones): centros urbanos con actividades recreativas y comerciales.",
+      "Parque Nacional Mochima (porciones compartidas y accesos desde Anzoátegui): islas, bahías y snorkel; atractivo para ecoturismo marino.",
+      "Río Orinoco y zonas de transición sur del estado: contrastes naturales entre costa y llanura fluvial que permiten turismo de aventura y observación natural.",
+      "Gran Plaza Libertadores (Barcelona): gran espacio urbano y referencia local por su tamaño y funciones cívicas."
     ],
     datosCuriosos: [
-      "Importante zona petrolera",
-      "Tiene las playas más hermosas del oriente venezolano",
-      "Cuna del poeta Andrés Eloy Blanco"
+      "Anzoátegui es el único estado venezolano con Mar Caribe al norte y el río Orinoco al sur, lo que le da una gran diversidad geográfica y turística.",
+      "El municipio Urbaneja (Lechería/El Morro) es el más pequeño del país y ostenta el adjetivo «turístico» en su nombre; es considerado uno de los más prósperos a nivel municipal en Venezuela.",
+      "La economía regional combina turismo costero con actividades petroleras históricas, lo que marca su paisaje humano y urbano."
     ]
   },
   "Apure": {
     capital: "San Fernando de Apure",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Apure_in_Venezuela.svg/300px-Apure_in_Venezuela.svg.png",
     cultura: [
-      "Joropo llanero",
-      "Coleo de toros",
-      "Festival del Alma Llanera"
+      "Identidad llanera: la vida y la música llanera (joropo, contrapunteo, arpa, cuatro y maracas) son ejes centrales de la cultura regional, junto a la figura del llanero y su tradición ganadera.",
+      "Festividades y prácticas: ferias ganaderas, festivales de música llanera y celebraciones religiosas que mezclan rituales rurales y ocio comunitario.",
+      "Gastronomía"
+      "Rasgos generales: cocina llanera basada en productos de la ganadería y de ríos; abundan las preparaciones a la brasa y a la leña, guisos y acompañamientos con arepas y casabe.",
+      "Platos típicos destacados: carne en vara (carne asada al palo), pisillo de chigüire (preparado con capibara donde se consume), carne mechada a la llanera, y guisos de pescado de río.",
+      "Acompañamientos y derivados: arepas, casabe (yuca), bollos y preparaciones con plátano y tubérculos; salsas y guarniciones sencillas que resaltan el sabor de la carne y el pescado.",
+      "Bebidas y costumbres: bebidas tradicionales sencillas y consumo de cafés y refrescos locales en ferias y festivales llaneros; la comida suele servirse en encuentros comunitarios y eventos ganaderos."
     ],
     turismo: [
-      "Parque Nacional Santos Luzardo",
-      "Río Apure",
-      "Hatos llaneros para observar fauna"
+      "San Fernando de Apure: casco histórico, plazas y actividades vinculadas a la vida llanera.",
+      "Río Apure y riberas fluviales: paseos en curiara, observación de aves y pesca deportiva; los ríos son ejes de transporte y turismo natural.",
+      "Llanuras y esteros: ecoturismo de sabana, safaris fotográficos para fauna (capibaras, aves, ciervos) y experiencia de vida ganadera tradicional.",
+      "Áreas protegidas y zonas naturales: reservas y paisajes llaneros que ofrecen observación de fauna y escenas típicas de los llanos venezolanos."
     ],
     datosCuriosos: [
-      "Conocido como el 'Estado Llanero'",
-      "Tiene la mayor población de chigüires del país",
-      "Escenario de la novela 'Doña Bárbara' de Rómulo Gallegos"
+      "Apure representa el corazón de los llanos venezolanos y es conocido por sus horizontes abiertos, paisaje que ha modelado una identidad nacional ligada a la figura del llanero."
+      "La hidrografía del estado (ríos caudalosos como el Apure) condiciona gran parte de la economía, transporte y calendario de actividades rurales."
     ]
   },
   "Aragua": {
