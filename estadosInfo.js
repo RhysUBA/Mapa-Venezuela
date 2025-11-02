@@ -1,21 +1,25 @@
 const estadosInfo = {
   "Amazonas": {
     capital: "Puerto Ayacucho",
+    superficie: "176.899 km²",
+    población: "137,000 habitantes",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Amazonas_in_Venezuela.svg/300px-Amazonas_in_Venezuela.svg.png",
     cultura: [
-      "Pueblos indígenas como Yanomami, Piaroa y Guahibo",
-      "Festival del Casabe",
-      "Artesanía con semillas y fibras naturales"
+      "Riqueza étnica: Predomina una fuerte presencia de pueblos indígenas (como los piaroa, yanomami, warao y yekuana), cuya cosmovisión, ceremonias, artesanía y sistemas de parentesco configuran la vida cultural regional.",
+      "Manifestaciones: Artesanía en cestería, tallado en madera, tejidos y música tradicional vinculada a rituales y cantares comunitarios. Identidad: la relación con el río y la selva es central en prácticas cotidianas y festivas.",
+      "Artesanía con semillas y fibras naturales",
+      "Gastronomía: La cocina amazónica combina prácticas indígenas tradicionales con aportes urbanos; se basa en ingredientes de la selva y del río: pescado de agua dulce, yuca (casabe y derivados), frutos silvestres, carnes de caza en comunidades que las consumen y preparaciones a la leña. También son comunes bebidas y usos de plantas locales (por ejemplo, el uso ritual y alimentario de la guayusa) y salsas o guisos con especies autóctonas. En Puerto Ayacucho existen tanto mercados indígenas con productos locales como restaurantes que reinterpretan la gastronomía amazónica para visitantes."
     ],
     turismo: [
-      "Parque Nacional Yapacana",
-      "Río Orinoco",
-      "Cerro Autana (árbol de la vida)"
+      "Cerro Autana: tepuy sagrado, paisaje emblemático y destino para quienes buscan geología singular y significado indígena.",
+      "Raudales de Atures y Atures Rapids (Orinoco cerca de Puerto Ayacucho): espectaculares rápidos y miradores fluviales; actividades de navegación y observación natural.",
+      "Salto de Yutaje y otros saltos de agua: cascadas y pozas en entornos de selva (acceso por rutas fluviales/guías locales).",
+      "Museo Etnográfico El Hombre Amazónico (Puerto Ayacucho): colecciones sobre culturas indígenas, etnografía regional y conservación.",
+      "Exploración de la selva y ecoturismo: rutas por ríos, observación de fauna (mamíferos, aves) y visitas a comunidades indígenas con guías autorizados."
     ],
     datosCuriosos: [
-      "Es el estado más grande de Venezuela",
-      "Más del 50% de su territorio está protegido",
-      "Hogar de la cascada más alta del mundo: Salto Ángel"
+      "El río Orinoco en esta zona forma conexiones hidrológicas únicas con la cuenca amazónica a través del Casiquiare, un fenómeno natural muy poco común a escala mundial.",
+      "Gran parte del estado es territorio de selva tropical y tepuyes; posee paisajes geológicos y biodiversidad que lo hacen uno de los más remotos y menos densamente poblados de Venezuela."
     ]
   },
   "Anzoátegui": {
