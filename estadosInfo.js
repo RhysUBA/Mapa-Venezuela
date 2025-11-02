@@ -1,8 +1,6 @@
 const estadosInfo = {
   "Amazonas": {
     capital: "Puerto Ayacucho",
-    superficie: "176.899 km²",
-    poblacion: "137,000 habitantes",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Amazonas_in_Venezuela.svg/300px-Amazonas_in_Venezuela.svg.png",
     cultura: [
       "Riqueza étnica: Predomina una fuerte presencia de pueblos indígenas (como los piaroa, yanomami, warao y yekuana), cuya cosmovisión, ceremonias, artesanía y sistemas de parentesco configuran la vida cultural regional.",
@@ -24,8 +22,6 @@ const estadosInfo = {
   },
   "Anzoátegui": {
     capital: "Barcelona",
-    superficie: "43.300 km²",
-    poblacion: "~1,2 millones",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Anzoategui_in_Venezuela.svg/300px-Anzoategui_in_Venezuela.svg.png",
     cultura: [
       "Identidad: mezcla de tradición costera (pescadores y festividades marinas) con fuerte influencia de la industria petrolera; expresiones folclóricas y religiosas locales, incluyendo celebraciones en honor a la Virgen del Valle. Gastronomía: platos a base de pescado y mariscos frescos; cocina influida por el litoral y las prácticas de pesca regional.",
@@ -50,8 +46,7 @@ const estadosInfo = {
     cultura: [
       "Identidad llanera: la vida y la música llanera (joropo, contrapunteo, arpa, cuatro y maracas) son ejes centrales de la cultura regional, junto a la figura del llanero y su tradición ganadera.",
       "Festividades y prácticas: ferias ganaderas, festivales de música llanera y celebraciones religiosas que mezclan rituales rurales y ocio comunitario.",
-      "Gastronomía",
-      "Rasgos generales: cocina llanera basada en productos de la ganadería y de ríos; abundan las preparaciones a la brasa y a la leña, guisos y acompañamientos con arepas y casabe.",
+      "Gastronomía/Rasgos generales: cocina llanera basada en productos de la ganadería y de ríos; abundan las preparaciones a la brasa y a la leña, guisos y acompañamientos con arepas y casabe.",
       "Platos típicos destacados: carne en vara (carne asada al palo), pisillo de chigüire (preparado con capibara donde se consume), carne mechada a la llanera, y guisos de pescado de río.",
       "Acompañamientos y derivados: arepas, casabe (yuca), bollos y preparaciones con plátano y tubérculos; salsas y guarniciones sencillas que resaltan el sabor de la carne y el pescado.",
       "Bebidas y costumbres: bebidas tradicionales sencillas y consumo de cafés y refrescos locales en ferias y festivales llaneros; la comida suele servirse en encuentros comunitarios y eventos ganaderos."
@@ -71,73 +66,78 @@ const estadosInfo = {
     capital: "Maracay",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Aragua_in_Venezuela.svg/300px-Aragua_in_Venezuela.svg.png",
     cultura: [
-      "Fiestas de San Juan Bautista",
-      "Danza de los Diablos de Turiamo",
-      "Gastronomía: empanadas de cazón y dulces criollos"
+      "Identidad cultural: mezcla de tradición llanera y costera, con fuertes manifestaciones folclóricas que incluyen danzas y ritmos populares como el cumaco y expresiones locales de gaita durante las festividades navideñas. Gastronomía: platos tradicionales regionales que combinan productos del litoral y del valle; la cocina popular está presente en ferias y festivales culturales. Artes y festivales: celebraciones comunales, música en vivo y festivales que resaltan la herencia agrícola y urbana del estado.",
+      "Gastronomía/Rasgos generales: combinación de influencias costeñas, llaneras y de zonas montañosas; platos varían según la zona (costa, valle y Colonia Tovar).",
+      "Platos y preparaciones destacadas: pescado frito con tostones y ceviches en las zonas costeras; pisca andina y postres de influencia europea en Colonia Tovar; empanadas, arepas y guisos criollos en las áreas urbanas y rurales."
     ],
     turismo: [
-      "Parque Nacional Henri Pittier",
-      "Playas de Choroní y Ocumare de la Costa",
-      "Lago de Valencia"
+      "Parque Nacional Henri Pittier: bosque nublado y playas (uno de los espacios naturales más importantes del estado) ideal para avistamiento de aves y caminatas ecológicas.",
+      "Colonia Tovar: pueblo de herencia alemana famoso por su arquitectura, gastronomía, artesanías y ferias temáticas.",
+      "Playas de Choroní y Puerto Colombia: balnearios costeros con infraestructura turística y acceso desde ciudades cercanas.",
+      "Hacienda Santa Teresa: antigua hacienda con tradición agrícola y oferta de visitas guiadas y enoturismo/experiencias históricas.",
+      "Museo Aeronáutico y sitios históricos en Maracay: museos y espacios vinculados a la historia militar y aeronáutica del país.",
+      "Parque Nacional San Esteban y otros parques regionales: áreas protegidas con montañas, playas y senderos para actividades al aire libre."
     ],
     datosCuriosos: [
-      "Primer parque nacional de Venezuela (Henri Pittier)",
-      "Maracay es conocida como la 'Ciudad Jardín'",
-      "Centro militar e industrial del país"
+      "Maracay es conocida como «La Ciudad Jardín», un apelativo que refleja su planeamiento urbano y tradición de parques y jardines.",
+      "Colonia Tovar conserva rasgos culturales y arquitectónicos de colonos alemanes que la fundaron, lo que la hace singular entre pueblos venezolanos.",
+      "Henri Pittier fue el primer parque nacional declarado en Venezuela y es uno de los mejores lugares del país para el avistamiento de aves por su biodiversidad y variedad de hábitats."
     ]
   },
   "Barinas": {
     capital: "Barinas",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Barinas_in_Venezuela.svg/300px-Barinas_in_Venezuela.svg.png",
     cultura: [
-      "Música llanera",
-      "Festival Internacional de Música Llanera Elorza",
-      "Fiesta de la Virgen del Pilar"
+      "Identidad cultural: marcada por la tradición llanera (música, joropo y vida ganadera) junto a influencias de las poblaciones andinas en la porción occidental; la figura del llanero y las haciendas son símbolos locales.",
+      "Gastronomía: platos típicos llaneros como el asado en vara, hallacas llaneras, arepas, sancochos y preparaciones con carne de res; uso de productos agrícolas locales (maíz, yuca, plátano) en acompañamientos y derivados."
     ],
     turismo: [
-      "Parque Nacional Sierra Nevada (sector Barinas)",
-      "Río Santo Domingo",
-      "Balneario La Acequia"
+      "Ciudad de Barinas: centro histórico, plazas y museos regionales.",
+      "Parque Nacional Juan Pablo Peñaloza (sector andino) y áreas naturales de transición hacia los Andes.",
+      "Haciendas y rutas llaneras para experiencias de vida ganadera y observación de paisajes rurales.",
+      "Parroquias y poblaciones tradicionales como Barinitas y Socopó con arquitectura y festividades locales."
     ],
     datosCuriosos: [
-      "Cuna del expresidente Hugo Chávez",
-      "Conocida como 'Puerta de los Andes'",
-      "Importante zona agrícola y ganadera"
+      "Barinas tiene sectores que pertenecen a dos grandes cuencas y paisajes contrastantes: llanos abiertos y montañas andinas, lo que le da diversidad agroecológica poco visible a simple vista.",
+      "Es tierra histórica de haciendas y jinetes llaneros; varias festividades y ferias ganaderas mantienen viva esa herencia cultural.",
+      "Combina llanos extensos con estribaciones andinas; economía fuertemente ligada a la ganadería y la agricultura."
     ]
   },
   "Bolívar": {
     capital: "Ciudad Bolívar",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Bolivar_in_Venezuela.svg/300px-Bolivar_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de la Cruz de Mayo",
-      "Festival del Calipso de El Callao (Patrimonio Cultural de la Humanidad)",
-      "Gastronomía minera y guayanesa"
+      "Identidad cultural: mezcla de tradiciones indígenas (pueblos pemón, warao y otros) con herencias coloniales y campesinas; la música regional incluye variantes del joropo guayanés y prácticas festivas ligadas a la vida fluvial y minera.",
+      "Gastronomía: platos basados en productos de río y selva (pescados de agua dulce, guisos con tubérculos, comidas a la parrilla) y preparaciones regionales como el pescado ahumado y comidas típicas que incorporan ingredientes locales de la Guayana venezolana."
     ],
     turismo: [
-      "Salto Ángel",
-      "Parque Nacional Canaima",
-      "Roraima Tepuy"
+      "Canaima y el Salto Ángel: parque nacional famoso por tepuyes, cascadas y el Salto Ángel (la cascada más alta del mundo).",
+      "Río Caroní y Ciudad Guayana: paisajes fluviales, complejos hidroeléctricos y actividades de turismo de aventura; así como la arquitectura y servicios de Ciudad Guayana.",
+      "Parque Nacional Jaua-Sarisariñama y otras áreas protegidas: mesetas, cavernas y formaciones geológicas singulares que atraen a investigadores y ecoturistas.",
+      "Comunidades indígenas y turismo cultural: visitas organizadas a poblaciones pemón y otras etnias para conocer artesanías, cosmovisión y guías locales autorizados."
     ],
     datosCuriosos: [
-      "Es el estado más rico en recursos minerales",
-      "En Canaima se filmaron escenas de la película 'Up'",
-      "Posee el mayor parque nacional del país"
+      "Es el estado más grandes de Venezuela con aproximadamente 240.528 km² de superficie. Ocupa buena parte de la región Guayana y contiene vastas áreas de selva, sabana y cuencas fluviales.",
+      "El Salto Ángel (Kerepakupai Vená) supera los 900 metros de caída libre y está ubicado en la cuenca del río Carrao dentro del Parque Nacional Canaima.",
+      "El relieve del estado combina tepuyes antiguos (mesetas rocosas), selvas densas y extensas sabanas; estas formaciones han inspirado numerosas expediciones científicas y relatos de exploradores.",
+      "La economía y la historia regional han estado marcadas por la minería, la actividad hidroeléctrica y la explotación de recursos de la Guayana, lo que dejó huellas en asentamientos y rutas de acceso a zonas remotas."
     ]
   },
   "Carabobo": {
     capital: "Valencia",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Carabobo_in_Venezuela.svg/300px-Carabobo_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de San Esteban",
-      "Carnavales de Guacara",
-      "Festival Internacional de Teatro de Valencia"
+      "Identidad cultural: mezcla de tradición histórica (vinculada a la independencia), actividad industrial y vida urbana; fuerte presencia de festividades cívicas y culturales en Valencia y los municipios costeros.",
+      "Gastronomía: platos regionales que combinan cocina costera e interior: pescados y mariscos en la zona costera, arepas, empanadas y guisos criollos; oferta gastronómica amplia en Valencia por su condición de centro urbano e industrial."
     ],
     turismo: [
-      "Campo de Carabobo",
-      "Lago de Valencia",
-      "Montañas del Parque Nacional San Esteban"
+      "Campo de Carabobo y Monumento Nacional Campo de Carabobo.",
+      "Puerto Cabello: Castillo de San Felipe, malecones y playas (bahía de Patanemo).",
+      "Valencia: casco histórico, Teatro Municipal, lago de Valencia y parques urbanos.",
+      "Vigirima y zonas naturales cercanas con petroglifos y paisajes costeros."
     ],
     datosCuriosos: [
+      "Carabobo es uno de los estados más pequeños en superficie pero con alta densidad urbana e industrial en su eje Valencia–Puerto Cabello; su nombre y muchos topónimos evocan la gesta independentista nacional.",
       "Lugar de la Batalla de Carabobo (1821)",
       "Centro industrial del país",
       "Valencia fue una de las primeras capitales de Venezuela"
@@ -147,112 +147,113 @@ const estadosInfo = {
     capital: "San Carlos",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Cojedes_in_Venezuela.svg/300px-Cojedes_in_Venezuela.svg.png",
     cultura: [
-      "Fiestas patronales de San Carlos",
-      "Música llanera",
-      "Feria Agroindustrial"
+      "Identidad cultural: fuertemente llanera; la vida ganadera, las fiestas patronales y la música llanera (joropo) conforman el tejido social; existe influencia de poblaciones rurales y tradiciones campesinas.",
+      "Gastronomía: platos típicos llaneros como carne en vara, sancochos, arepas, platos con yuca y plátano; uso de productos locales de la ganadería y la agricultura en comidas familiares y ferias."
     ],
     turismo: [
-      "Río Tirgüa",
-      "Balneario El Baúl",
-      "Cerro Platillón"
+      "Casco histórico y plazas de San Carlos.",
+      "Parajes llaneros y haciendas para experiencias rurales y rutas ecuestres.",
+      "Presas y cuerpos de agua locales que sirven para pesca y recreación.",
+      "Pueblos como Tinaquillo y Tinaco, con ferias tradicionales y manifestaciones culturales."
     ],
     datosCuriosos: [
-      "Importante productor de ganado",
-      "Zona de transición entre los llanos y los Andes",
-      "Cuenta con una biodiversidad notable"
+      "Cojedes está bicado en la región de los Llanos centrales; combina zonas llaneras extensas con algunas colinas en el extremo norte.",
+      "Aporta una porción pequeña del territorio nacional pero mantiene una fuerte identidad llanera visible en su música, festividades y economía agropecuaria.",
+      "La porción norte del estado presenta una transición hacia relieve más ondulado, contraste con las planicies llaneras que dominan la mayor parte del territorio."
     ]
   },
   "Delta Amacuro": {
     capital: "Tucupita",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Delta_Amacuro_in_Venezuela.svg/300px-Delta_Amacuro_in_Venezuela.svg.png",
     cultura: [
-      "Tradiciones del pueblo warao",
-      "Fiesta de San Rafael",
-      "Pesca artesanal"
+      "Identidad cultural: marcada por la predominancia del pueblo warao y otras comunidades indígenas; la vida y la organización social están estrechamente ligadas al río, la pesca y las viviendas palafíticas.",
+      "Gastronomía: basada en productos fluviales y de estuario: pescados y mariscos de agua dulce y salobre, cangrejos, guisos con tubérculos (yuca), casabe y preparaciones locales como pescados ahumados y platos tradicionales warao."
     ],
     turismo: [
-      "Delta del Orinoco",
-      "Comunidades Warao",
-      "Río Grande"
+      "Navegación por los caños y canales del delta; observación de aves y fauna; paseos en curiara y eco-excursiones desde Tucupita.",
+      "Comunidades palafíticas y encuentros culturales con pueblos warao.",
+      "Playas interiores, manglares y reservas de humedales aptas para ecoturismo y fotografía de paisajes fluviales."
     ],
     datosCuriosos: [
-      "Región compuesta por miles de caños y ríos",
-      "El idioma warao es hablado por miles de personas",
-      "Importante reserva ecológica"
+      "Gran parte del territorio está formado por sedimentos del Orinoco; el paisaje cambia con las mareas y las crecidas, creando islas temporales y redes de caños.",
+      "Las viviendas tradicionales son palafitos construidos sobre pilotes para adaptarse a las variaciones del nivel del agua.",
+      "Es conocido como Delta del Orinoco por su gran extensión de manglares, caños e islas donde predomina el ecosistema deltaico"
     ]
   },
   "Distrito Capital": {
     capital: "Caracas",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Distrito_Capital_in_Venezuela.svg/300px-Distrito_Capital_in_Venezuela.svg.png",
     cultura: [
-      "Festival de la Virgen de la Divina Pastora",
-      "Quema de Judas",
-      "Gastronomía criolla: arepas, pabellón"
+      "Identidad cultural: metrópolis nacional y centro político-administrativo; mezcla urbana con fuertes influencias migratorias internas y extranjeras que modelan su vida cultural, artística y musical.",
+      "Gastronomía: oferta diversa que va desde platos criollos tradicionales (arepas, pabellón, empanadas) hasta cocina internacional y propuestas de fusión; mercados y plazas ofrecen productos regionales de todo el país."
     ],
     turismo: [
-      "Panteón Nacional",
-      "Parque Nacional El Ávila",
-      "Museo de Bellas Artes"
+      "Teatro Teresa Carreño y espacios culturales del eje cultural caraqueño.",
+      "Parque Nacional El Ávila (Waraira Repano) y miradores sobre la ciudad.",
+      "Plaza Bolívar, casco histórico y museos (Museo de Arte Contemporáneo, Museo de Bellas Artes).",
+      "El Hatillo y Sebucán como municipios con oferta gastronómica, artesanal y vida nocturna.",
+      "Paseo Los Próceres, Jardín Botánico y Paseo Colón"
     ],
     datosCuriosos: [
-      "Sede de los poderes públicos nacionales",
-      "Fundada en 1567 por Diego de Losada",
-      "Cuna de Simón Bolívar"
+      "Distrito Capital es el núcleo urbano y político del país; su densidad, historia y funciones administrativas lo distinguen del resto de las entidades federales.",
+      "Caracas está asentada en un valle al pie del Ávila, lo que genera microclimas y paisajes urbanos muy contrastantes en cortas distancias.",
+      "Tiene una vida cultural muy activa con teatros, festivales y una amplia escena artística independiente que concentra buena parte de la actividad cultural del país"
     ]
   },
   "Falcón": {
     capital: "Coro",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Falcon_in_Venezuela.svg/300px-Falcon_in_Venezuela.svg.png",
     cultura: [
-      "Tambor coriano",
-      "Fiesta de los Tambores de San Juan",
-      "Artesanía en arcilla"
+      "Identidad cultural: mezcla de raíces indígenas, coloniales y costeras; fuerte presencia de tradiciones pesqueras y festivas en pueblos costeros, junto a manifestaciones folklóricas del occidente venezolano.",
+      "Gastronomía: basada en productos del mar y la llanura costera; platos típicos incluyen pescado frito y guisos de mariscos, empanadas de cazón, bollos y arepas; dulces tradicionales y preparaciones con queso de cabra en zonas rurales."
     ],
     turismo: [
-      "Parque Nacional Médanos de Coro",
-      "Península de Paraguaná",
-      "Ciudad de Coro (Patrimonio de la Humanidad)"
+      "Parque Nacional Morrocoy: cayos, playas y sistemas de manglares ideales para snorkel y turismo de sol y playa.",
+      "Médanos de Coro (Parque Nacional Médanos de Coro): dunas costeras únicas en Venezuela.",
+      "Centro histórico de Coro: arquitectura colonial y declaratoria UNESCO por su valor patrimonial.",
+      "Península de Paraguaná y playas de Adícora, Punta Cardón y Punto Fijo: deportes náuticos (windsurf, kitesurf) y balnearios.",
+      "Refinerías y actividad industrial en la región de Punto Fijo: interés para turismo industrial y rutas económicas históricas."
     ],
     datosCuriosos: [
-      "Tiene el único desierto de Venezuela",
-      "Primera capital histórica de Venezuela",
-      "Posee importantes refinerías de petróleo"
+      "El centro histórico de Coro es Patrimonio de la Humanidad por la UNESCO por su arquitectura y trazado urbano colonial.",
+      "Los Médanos de Coro forman un paisaje de dunas móviles raro en el Caribe venezolano.",
+      "La península de Paraguaná alberga una de las mayores concentraciones de infraestructura petrolera del país y también playas reconocidas para deportes de viento."
     ]
   },
   "Guárico": {
     capital: "San Juan de los Morros",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Guarico_in_Venezuela.svg/300px-Guarico_in_Venezuela.svg.png",
     cultura: [
-      "Joropo central",
-      "Toros coleados",
-      "Festival del Joropo Recio"
+      "Identidad cultural: profundamente llanera; la ganadería, el joropo, las ferias ganaderas y la vida rural conforman la identidad social y festiva del estado.",
+      "Gastronomía: platos típicos llaneros como la carne en vara, sancochos, arepas, bollos y preparaciones basadas en productos locales (yuca, maíz, plátano) que aparecen en ferias y encuentros rurales."
     ],
     turismo: [
-      "Parque Nacional Aguaro-Guariquito",
-      "Monumento al Cristo de los Morros",
-      "Aguas termales de San Juan"
+      "Parque Nacional Guatopo: biodiversidad y senderismo; accesos desde la zona norte del estado.",
+      "Aguas termales de San Juan de los Morros: balnearios termales y recreación local.",
+      "Morros de Macaira y Monumento Natural Aristides Rojas: formaciones rocosas y paisajes singulares para excursiones y fotografía.",
+      "Embalse de Guanapito y humedales llaneros: pesca, observación de aves y recreación en entornos fluviales."
     ],
     datosCuriosos: [
-      "Corazón de los llanos centrales",
-      "Mayor productor de arroz del país",
-      "Tiene formaciones rocosas únicas"
+      "Guárico está estratégicamente ubicado como conexión entre la región central y los llanos, lo que le vale el apelativo de «Corazón de Venezuela» y explica su papel histórico en rutas comerciales y ganaderas.",
+      "Los morros y formaciones rocosas del estado contrastan con las llanuras extensas, ofreciendo micropaisajes de gran valor escénico y geológico."
     ]
   },
   "Lara": {
     capital: "Barquisimeto",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Lara_in_Venezuela.svg/300px-Lara_in_Venezuela.svg.png",
     cultura: [
-      "Tamunangue (baile folklórico)",
-      "Feria Internacional de Barquisimeto",
-      "Gastronomía: olleta de gallo, majarete"
+      "Identidad cultural: Barquisimeto es conocida como un epicentro musical y cultural del occidente venezolano; el estado destaca por festivales, tradición coral y una fuerte escena artística que mezcla música, artesanía y eventos populares.",
+      "Gastronomía: combinación de cocina andina y llanera con platos y dulces locales; en la oferta destacan arepas y empanadas, cazuelas y postres tradicionales propios de ferias y festivales regionales."
     ],
     turismo: [
       "Monumento al Sol Naciente",
       "Parque Nacional Yacambú",
-      "Jardín Botánico de Barquisimeto"
+      "Jardín Botánico de Barquisimeto",
+      "Parque Zoológico",
+      "Parque Cerro El Copey y miradores urbanos; espacios culturales y festivales en la ciudad Crepuscular; además rutas naturales y paisajes rurales en municipios cercanos que complementan la oferta turística del estado."
     ],
     datosCuriosos: [
-      "Conocida como la capital musical de Venezuela",
+      "Barquisimeto es llamada la «Ciudad Crepuscular» y suele identificarse como un importante núcleo musical de Venezuela, lo que influye fuertemente en la vida cultural y en la celebración de festivales y actividades artísticas.",
       "Cuna de compositores como Alí Primera",
       "Cuarto estado más poblado del país"
     ]
@@ -263,17 +264,20 @@ const estadosInfo = {
     cultura: [
       "Feria del Sol",
       "Festival de la Virgen de la Inmaculada Concepción",
-      "Gastronomía andina: pizca andina, arepas de trigo"
+      "Identidad cultural: fuerte carácter andino con tradición académica y artística; combinación de folclore andino, celebraciones religiosas y vida universitaria que dinamiza la escena cultural.",
+      "Gastronomía: platos de montaña y clima frío como la hallaca andina en temporada, asados, sancochos, arepas andinas, dulces típicos y bebidas calientes; uso de papas, trigo, quesos y derivados en recetas locales."
     ],
     turismo: [
-      "Teleférico de Mérida (más alto y largo del mundo)",
-      "Pico Bolívar",
-      "Parque Nacional Sierra Nevada"
+      "Teleférico Mukumbarí (antiguo Teleférico de Mérida / teleférico más largo y alto de Latinoamérica en su momento) y los picos andinos cercanos para montaña y senderismo.",
+      "Los Aleros y la Montaña de los Sueños: parques temáticos de recreación y muestra artesanal.",
+      "Parque Nacional Sierra Nevada (parques y rutas hacia picos nevados) y zonas de alta montaña como el páramo.",
+      "Plaza Bolívar y casco histórico de Mérida; vida nocturna y oferta gastronómica impulsada por la población estudiantil.",
+      "Pueblos y rutas cercanas: Tabay, El Vigía (acceso regional), aguas termales y rutas de agroturismo."
     ],
     datosCuriosos: [
-      "Tiene las montañas más altas de Venezuela",
-      "Ciudad universitaria por excelencia",
-      "Fundada en 1558"
+      "Mérida es conocida por su intensa vida universitaria y por ser un centro de investigación y cultura andina en Venezuela.",
+      "El teleférico de Mérida ha sido un icono turístico y técnico de la región, conectando la ciudad con alturas andinas y ofreciendo vistas espectaculares.",
+      "Los paisajes de páramo y paramillo que rodean la ciudad ofrecen ecosistemas frágiles y paisajes que cambian rápidamente con la altitud."
     ]
   },
   "Miranda": {
