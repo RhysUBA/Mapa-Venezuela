@@ -177,7 +177,7 @@ const estadosInfo = {
     datosCuriosos: [
       "Gran parte del territorio está formado por sedimentos del Orinoco; el paisaje cambia con las mareas y las crecidas, creando islas temporales y redes de caños.",
       "Las viviendas tradicionales son palafitos construidos sobre pilotes para adaptarse a las variaciones del nivel del agua.",
-      "Es conocido como Delta del Orinoco por su gran extensión de manglares, caños e islas donde predomina el ecosistema deltaico"
+      "Es conocido como Delta del Orinoco por su gran extensión de manglares, caños e islas donde predomina el ecosistema deltaico."
     ]
   },
   "Distrito Capital": {
@@ -294,8 +294,8 @@ const estadosInfo = {
       "Sitios de interés en Petare: tradiciones populares, rutas culturales y arquitectura vernácula."
     ],
     datosCuriosos: [
-      "Segundo estado más poblado de Venezuela",
-      "Tiene importante diversidad climática",
+      "Segundo estado más poblado de Venezuela.",
+      "Tiene importante diversidad climática.",
       "Petare, dentro del estado Miranda, es uno de los complejos urbanos de mayor densidad poblacional en América Latina.",
       "Miranda funciona como corredor entre el Gran Caracas y las llanuras centrales, lo que le da una mezcla peculiar de áreas residenciales, industriales y rurales."
     ]
@@ -310,15 +310,15 @@ const estadosInfo = {
     turismo: [
       "Cueva del Guácharo: ubicada en el Parque Nacional El Guácharo, es famosa por sus formaciones rocosas y por albergar al ave nocturna guácharo. Es ideal para amantes de la espeleología y la biodiversidad.",
       "Balneario de Miraflores: cercano a San Antonio de Capayacuar, ofrece aguas frescas y paisajes naturales para el descanso y la recreación.",
-      "Monumento al Samán de Güere",
-      "Aguas termales de Miraflores",
+      "Monumento al Samán de Güere.",
+      "Aguas termales de Miraflores.",
       "Caripe del Guácharo: pintoresco pueblo de montaña con clima fresco, historia colonial y acceso directo a la cueva. Fundado en el siglo XVIII, conserva tradiciones indígenas y religiosas.",
       "Parque Zoológico La Guaricha: ubicado en Maturín, es un jardín zoológico urbano con especies locales y áreas de esparcimiento para familias."
     ],
     datosCuriosos: [
       "En Maturín, la capital, la Semana Santa se celebra con procesiones solemnes, eventos culturales y manifestaciones artísticas que reflejan la espiritualidad local.",
       "En zonas rurales, se practican juegos tradicionales llaneros como las coleadas, que forman parte del folclore activo y pueden ser presenciados por visitantes en ferias y festivales.",
-      "Tiene la cueva más grande de Venezuela",
+      "Tiene la cueva más grande de Venezuela.",
       "Monagas combina zonas montañosas, ríos, balnearios y selvas, lo que permite al visitante explorar desde cavernas hasta cascadas y pueblos rurales con encanto."
     ]
   },
