@@ -284,38 +284,42 @@ const estadosInfo = {
     capital: "Los Teques",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Miranda_in_Venezuela.svg/300px-Miranda_in_Venezuela.svg.png",
     cultura: [
-      "Diablos Danzantes de Yare (Patrimonio de la Humanidad)",
-      "Parranda de San Pedro",
-      "Gastronomía: pan de jamón, hallacas"
+      "Identidad cultural: mezcla urbano–metropolitana con fuerte presencia de migraciones internas; coexisten tradiciones populares (fiestas patronales, música y danzas regionales) con una vida cultural contemporánea activa en teatro, música y artes plásticas.",
+      "Gastronomía: oferta diversa por su condición metropolitana; platos tradicionales y callejeros (arepas, empanadas, pabellón) conviven con propuestas gourmet y cocina de fusión en municipios como El Hatillo y Chacao."
     ],
     turismo: [
-      "Playas de Barlovento",
-      "Parque Nacional El Ávila",
-      "Colonia Tovar"
+      "Parque Nacional Macarao y áreas verdes para senderismo y recreación.",
+      "Colinas y miradores de Los Teques; teleférico y accesos al Ávila desde algunos puntos del estado.",
+      "Casco histórico de Guarenas y pueblos tradicionales; El Hatillo como centro cultural y gastronómico.",
+      "Sitios de interés en Petare: tradiciones populares, rutas culturales y arquitectura vernácula."
     ],
     datosCuriosos: [
       "Segundo estado más poblado de Venezuela",
       "Tiene importante diversidad climática",
-      "Cuna del prócer Francisco de Miranda"
+      "Petare, dentro del estado Miranda, es uno de los complejos urbanos de mayor densidad poblacional en América Latina.",
+      "Miranda funciona como corredor entre el Gran Caracas y las llanuras centrales, lo que le da una mezcla peculiar de áreas residenciales, industriales y rurales."
     ]
   },
   "Monagas": {
     capital: "Maturín",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Monagas_in_Venezuela.svg/300px-Monagas_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de la Cruz de Mayo",
-      "Velorios de Cruz",
-      "Gastronomía: casabe, sancocho de guaraguara"
+      "Identidad cultural: mezcla de tradiciones llaneras y costeras con fuerte presencia de comunidades indígenas en algunas zonas; festividades religiosas y ferias populares son expresiones culturales destacadas.",
+      "Gastronomía: platos regionales con influencia llanera y costeña: pescado del río y del litoral, guisos criollos, arepas y dulces típicos; en ferias locales se mantienen preparaciones tradicionales ligadas al ciclo agrícola y ganadero."
     ],
     turismo: [
-      "Parque Nacional Cueva del Guácharo",
+      "Cueva del Guácharo: ubicada en el Parque Nacional El Guácharo, es famosa por sus formaciones rocosas y por albergar al ave nocturna guácharo. Es ideal para amantes de la espeleología y la biodiversidad.",
+      "Balneario de Miraflores: cercano a San Antonio de Capayacuar, ofrece aguas frescas y paisajes naturales para el descanso y la recreación.",
       "Monumento al Samán de Güere",
-      "Aguas termales de Miraflores"
+      "Aguas termales de Miraflores",
+      "Caripe del Guácharo: pintoresco pueblo de montaña con clima fresco, historia colonial y acceso directo a la cueva. Fundado en el siglo XVIII, conserva tradiciones indígenas y religiosas.",
+      "Parque Zoológico La Guaricha: ubicado en Maturín, es un jardín zoológico urbano con especies locales y áreas de esparcimiento para familias."
     ],
     datosCuriosos: [
-      "Importante zona petrolera",
+      "En Maturín, la capital, la Semana Santa se celebra con procesiones solemnes, eventos culturales y manifestaciones artísticas que reflejan la espiritualidad local.",
+      "En zonas rurales, se practican juegos tradicionales llaneros como las coleadas, que forman parte del folclore activo y pueden ser presenciados por visitantes en ferias y festivales.",
       "Tiene la cueva más grande de Venezuela",
-      "Lugar de nacimiento de José Tadeo Monagas"
+      "Monagas combina zonas montañosas, ríos, balnearios y selvas, lo que permite al visitante explorar desde cavernas hasta cascadas y pueblos rurales con encanto."
     ]
   },
   "Nueva Esparta": {
