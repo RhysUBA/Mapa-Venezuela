@@ -326,152 +326,152 @@ const estadosInfo = {
     capital: "La Asunción",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nueva_Esparta_in_Venezuela.svg/300px-Nueva_Esparta_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de la Virgen del Valle",
-      "Danza del Carite",
-      "Tradiciones de pescadores"
+      "Identidad cultural: fuerte tradición marinera y festividades religiosas, con la devoción a la Virgen del Valle como elemento central en la identidad social y festiva de la isla.",
+      "Gastronomía: cocina de isla basada en pescados y mariscos, guisos costeros, empanadas de cazón, quesos locales y dulces tradicionales; la oferta refleja la mezcla de herencia indígena, africana y costeña."
     ],
     turismo: [
-      "Playas de Porlamar y Pampatar",
-      "Parque Nacional Laguna de La Restinga",
-      "Castillo de San Carlos de Borromeo"
+      "Playas de Margarita (Porlamar, El Yaque, Playa Parguito), islotes como Coche y Cubagua, y parques marinos para buceo y navegación.",
+      "Santuario de la Virgen del Valle, celebraciones religiosas y festividades regionales que atraen peregrinos y visitantes.",
+      "Centros comerciales y vida nocturna en Porlamar; sitios históricos en La Asunción y poblaciones costeras con arquitectura y plazas tradicionales."
     ],
     datosCuriosos: [
-      "Único estado insular de Venezuela",
-      "Formado por tres islas principales",
-      "Llamada 'Tierra de Gracia' por Colón"
+      "La isla de Margarita es también conocida como «La Perla del Caribe» o vinculada históricamente al lema «Gloria Margarita» por su importancia en la gesta independentista y su carácter insular.",
+      "Isla de Cubagua fue uno de los primeros asentamientos europeos en la región y conserva vestigios arqueológicos e históricos de la época colonial.",
+      "La devoción a la Virgen del Valle es una de las manifestaciones religiosas más importantes del oriente venezolano y genera peregrinaciones y festividades multitudinarias cada año."
     ]
   },
   "Portuguesa": {
     capital: "Guanare",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Portuguesa_in_Venezuela.svg/300px-Portuguesa_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de la Virgen de Coromoto",
-      "Festival del Joropo Llanero",
-      "Gastronomía llanera"
+      "Identidad cultural: tradición agropecuaria y llanera; ferias agrícolas y festivales patronales articulan la vida social; fuerte presencia de prácticas y música llanera en el interior del estado.",
+      "Gastronomía: basada en productos de la tierra: arepas, hallacas en temporada, sancochos, bollos, platos con maíz y yuca; destacan dulces y conservas artesanales y preparaciones con arroz y carnes propias de la cocina campesina."
     ],
     turismo: [
-      "Santuario Nacional de la Virgen de Coromoto",
-      "Parque Nacional Dinira",
-      "Río Guanare"
+      "Santuario Nacional de Nuestra Señora de Coromoto en Guanare (peregrinaciones y turismo religioso).",
+      "Parques y áreas naturales como la Reserva Biológica La Coromoto y espacios rurales para turismo agroecológico.",
+      "Rutas y ferias agrícolas en municipios productores (conocer mercados, festivales y producción local).",
+      "Pueblos con arquitectura y tradiciones rurales que muestran la vida llanera y agroindustrial del estado."
     ],
     datosCuriosos: [
-      "Capital espiritual de Venezuela",
-      "Importante productor agrícola",
-      "Lugar de la aparición de la Virgen de Coromoto"
+      "El apelativo «El Granero de Venezuela» se debe a su gran contribución a la producción nacional de cereales y rubros agrícolas.",
+      "Guanare es sede del Santuario Nacional de la Virgen de Coromoto, patrona de Venezuela, lo que convierte a la ciudad en un importante centro de peregrinación religiosa.",
+      "La economía y cultura local están fuertemente ligadas a ciclos agrícolas y ferias que marcan el calendario comunitario."
     ]
   },
   "Sucre": {
     capital: "Cumaná",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Sucre_in_Venezuela.svg/300px-Sucre_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de la Cruz de Mayo",
-      "Tambores de Cumaná",
-      "Gastronomía basada en mariscos"
+      "Identidad cultural: marcada por la tradición marinera, festividades religiosas y la devoción a la Virgen del Valle, que articula gran parte de la vida social y ritual de las islas y poblaciones costeras.",
+      "Gastronomía: cocina litoral basada en pescados y mariscos (pescado frito, empanadas de cazón, guisos de mar), quesos locales y dulces tradicionales; la oferta culinaria refleja mezcla de herencias indígenas, africanas y costeñas."
     ],
     turismo: [
-      "Parque Nacional Mochima",
-      "Castillo de San Antonio de la Eminencia",
-      "Playas del Golfo de Cariaco"
+      "Parque Nacional Mochima y sus cayos y playas aptos para buceo y navegación.",
+      "Playas y balnearios alrededor de Cumaná, así como los islotes y archipiélagos que atraen turismo de sol y mar.",
+      "Centros históricos y tradiciones religiosas en Cumaná y poblaciones cercanas, con rutas culturales y festivales regionales."
     ],
     datosCuriosos: [
-      "Primera ciudad fundada en América del Sur (1515)",
-      "Cuna del Gran Mariscal de Ayacucho",
-      "Tiene importantes reservas de gas natural"
+      "Isla Cubagua conserva vestigios de los primeros asentamientos europeos en la región y aporta un importante valor histórico y arqueológico.",
+      "La devoción y festividades en torno a la Virgen del Valle generan peregrinaciones y eventos multitudinarios que son un fuerte imán cultural y turístico.",
+      "Es un estado costero con numerosas playas e islotes y una intensa tradición marinera que define gran parte de su identidad y economía."
     ]
   },
   "Táchira": {
     capital: "San Cristóbal",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Tachira_in_Venezuela.svg/300px-Tachira_in_Venezuela.svg.png",
     cultura: [
-      "Feria Internacional de San Sebastián",
-      "Gastronomía andina: pizca andina, mute",
-      "Música andina"
+      "Identidad cultural: región andina con fuerte arraigo campesino y tradiciones religiosas; la vida social se articula en torno a ferias, misas y festividades locales que combinan influencias indígenas, españolas y vecinas de la frontera colombiana.",
+      "Gastronomía: cocina andina de clima frío: sopas y guisos reconfortantes como el mute y el mondongo andino; consumo de trucha en zonas de altura; productos lácteos y quesos andinos; arepas, hallacas andinas y dulces/conservas regionales que se ofrecen en mercados y ferias."
     ],
     turismo: [
-      "Páramo El Zumbador",
-      "Pueblo de San Pedro del Río",
-      "Parque Nacional Chorro El Indio"
+      "San Cristóbal: plazas, mercados tradicionales y vida cultural urbana.",
+      "Pueblos y festividades de La Grita: turismo religioso y patrimonio local.",
+      "Páramos y áreas andinas para senderismo y observación de paisaje, incluyendo sectores del Parque Nacional cercano al estado.",
+      "Localidades fronterizas (San Antonio, Ureña) con actividad comercial y rutas históricas entre Venezuela y Colombia.",
+      "Rutas rurales y productores locales que ofrecen turismo agroecológico y gastronómico."
     ],
     datosCuriosos: [
-      "Fronterizo con Colombia",
-      "Cuna de varios presidentes venezolanos",
-      "Región cafetalera por excelencia"
+      "Dato relevante: es un estado andino limítrofe con Colombia, lo que le confiere una intensa dinámica comercial y cultural transfronteriza.",
+      "El Táchira combina climas de montaña con valles templados, permitiendo la producción de hortalizas, café y ganadería a distintas altitudes.",
+      "Las festividades religiosas y ferias regionales atraen a visitantes de zonas vecinas y mantienen tradiciones culinarias y artesanales bien conservadas."
     ]
   },
   "Trujillo": {
     capital: "Trujillo",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Trujillo_in_Venezuela.svg/300px-Trujillo_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de la Virgen de la Paz",
-      "Danza de los Pastores del Niño Jesús",
-      "Gastronomía: quesos andinos, miche"
+      "Identidad cultural: marcada por el perfil andino: música y bailes regionales, fervor religioso (procesiones y devociones locales) y celebraciones tradicionales como las fiestas de San Benito; coexistencia de comunidades rurales, artesanos y centros urbanos con vida cultural activa.",
+      "Gastronomía: cocina andina con platos reconfortantes y uso de productos locales: sopas y guisos, arepas y empanadas regionales, quesos y derivados lácteos, dulces tradicionales; la oferta varía entre los valles y las zonas altas."
     ],
     turismo: [
-      "Monumento a la Virgen de la Paz",
-      "Parque Nacional Dinira",
-      "Páramo de Guaramacal"
+      "Monumento a la Virgen de la Paz: Es el monumento mariano más alto de América Latina, con 46.72 metros de altura. Está ubicado en la ciudad de Trujillo y ofrece vistas panorámicas de los Andes.",
+      "Museo Trapiche de Boconó: Espacio cultural que preserva la historia agrícola y artesanal de la región.",
+      "Boconó: Conocida como la ciudad jardín, destaca por su vegetación, clima templado, plazas coloniales y producción agrícola.",
+      "Jajó: Pueblo andino con arquitectura colonial, calles empedradas y casas blancas. Es uno de los más pintorescos del estado.",
+      "Parque Nacional Dinira: Compartido con Lara y Portuguesa, protege ecosistemas de montaña, ríos y bosques nublados.",
+      "Laguna de los Cedros: Hermoso cuerpo de agua rodeado de vegetación, ideal para caminatas y fotografía."
     ],
     datosCuriosos: [
       "Tiene el monumento más alto de América (Virgen de la Paz)",
-      "Lugar donde se firmó el Decreto de Guerra a Muerte",
-      "Importante productor de café y cambur"
+      "El estado combina centros urbanos importantes (Valera es una de sus ciudades más pobladas) con amplias zonas rurales andinas, lo que genera contrastes culturales y económicos dentro de su territorio.",
+      "Las festividades religiosas y las procesiones locales son eventos sociales de gran convocatoria que mantienen vivas tradiciones comunitarias.",
     ]
   },
   "Vargas": {
     capital: "La Guaira",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Vargas_in_Venezuela.svg/300px-Vargas_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de San Juan Bautista",
-      "Tambores de la costa",
-      "Gastronomía a base de pescado"
+      "Identidad cultural: marcada por la tradición marinera y portuaria; mezcla de comunidades costeras, pesca artesanal y fuertes lazos con la actividad aeroportuaria y comercial del litoral central.",
+      "Gastronomía: cocina litoral basada en pescados y mariscos (pescado frito, empanadas de cazón, ceviches, guisos marinos), además de bocados populares en las playas y ofertas de comida callejera en centros urbanos y balnearios."
     ],
     turismo: [
-      "Playas de Catia La Mar",
-      "Puerto de La Guaira",
-      "Camino de los Españoles"
+      "Playas y balnearios de la Costa Central: El Yaque, Playa Grande, Caruao y otras franjas de litoral para baño, pesca y deportes náuticos.",
+      "Malecón y puerto de La Guaira: paseos, mercados y oferta gastronómica costera.",
+      "Cerro El Ávila (accesos desde la zona litoral), miradores y senderos cercanos que ofrecen vistas sobre la costa y la ciudad.",
+      "Sitios históricos y culturales vinculados a la navegación, el comercio y la tradición portuaria."
     ],
     datosCuriosos: [
-      "Principal puerto de Venezuela",
-      "Creación reciente (1998)",
-      "Vulnerable a deslaves naturales"
+      "Vargas es un estado litoral con fuerte vocación portuaria y marítima, sede del principal aeropuerto internacional que sirve al área metropolitana de Caracas.",
+      "La topografía del estado es abrupta: corta franja costera con montañas que descienden casi hasta el mar, generando playas, acantilados y quebradas en distancias cortas.",
+      "La economía local combina turismo de playa, pesca artesanal y actividades portuarias; las festividades costeras y ferias populares atraen visitantes del centro del país."
     ]
   },
   "Yaracuy": {
     capital: "San Felipe",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Yaracuy_in_Venezuela.svg/300px-Yaracuy_in_Venezuela.svg.png",
     cultura: [
-      "Fiesta de San Juan Bautista",
-      "Danza de la Sanjuanera",
-      "Gastronomía: casabe, dulces criollos"
+      "Identidad cultural: mezcla de tradiciones llaneras y centro-occidentales; festividades locales, música folclórica y ferias agrícolas articulan la vida comunitaria.",
+      "Gastronomía: platos tradicionales que combinan influencias andinas y llaneras; arepas, empanadas, guisos y dulces típicos regionales; uso de productos locales como maíz, yuca y queso."
     ],
     turismo: [
-      "Parque Nacional Yurubí",
-      "Monumento al Cacique Yaracuy",
-      "Centro de Artes La Sirena"
+      "Parque Nacional Yurubí y áreas naturales para senderismo y observación de paisaje.",
+      "Cascadas y parajes rurales en municipios del estado; cascos históricos como el de San Felipe.",
+      "Rutas y ferias agrícolas que muestran la producción local y tradiciones rurales."
     ],
     datosCuriosos: [
-      "Llamado 'Tierra de María Lionza'",
-      "Importante zona agrícola",
-      "Tiene reservas minerales importantes"
+      "Es conocido por su producción agrícola (caña, maíz y otros rubros) y por ser un estado con importante actividad agrícola y agroindustrial.",
+      "San Felipe es la capital y centro administrativo y cultural del estado; su historia y diseño urbano reflejan la evolución regional."
     ]
   },
   "Zulia": {
     capital: "Maracaibo",
     imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Zulia_in_Venezuela.svg/300px-Zulia_in_Venezuela.svg.png",
     cultura: [
-      "Gaita zuliana",
-      "Feria de La Chinita",
-      "Danza de Las Turas"
+      "Identidad cultural: marcada por tradiciones costeñas y afrocaribeñas; la gaita zuliana y las fiestas en torno a la Virgen de Chiquinquirá (La Chinita) son elementos centrales de la identidad regional.",
+      "Gastronomía: cocina costeña con fuerte presencia de pescados y mariscos, platos como el patacón, empanadas de cazón y arepas rellenas; la oferta urbana en Maracaibo mezcla comida tradicional y propuestas modernas."
     ],
     turismo: [
-      "Lago de Maracaibo",
-      "Puente General Rafael Urdaneta",
-      "Páramo El Rosal"
+      "Lago de Maracaibo y el Puente General Rafael Urdaneta como iconos del paisaje y la infraestructura regional.",
+      "Basílica y devoción a la Virgen de Chiquinquirá (La Chinita), foco de peregrinación y festividades locales.",
+      "Relámpago del Catatumbo (fenómeno meteorológico visible desde la cuenca del Lago de Maracaibo) y parques/áreas naturales como las ciénagas y la Sierra de Perijá para ecoturismo y observación de aves."
     ],
     datosCuriosos: [
-      "Principal región petrolera de Venezuela",
-      "Tiene el lago más grande de Sudamérica",
-      "Región con identidad cultural muy marcada"
+      "Principal región petrolera de Venezuela.",
+      "Tiene el lago más grande de Sudamérica.",
+      "El Relámpago del Catatumbo es uno de los fenómenos atmosféricos más singulares de la región y se asocia tradicionalmente con el área del Lago de Maracaibo.",
+      "Maracaibo y su puente son símbolos identitarios regionales y puntos de referencia en la economía petrolera del país.",
+      "La Feria de La Chinita en noviembre reúne música, tradiciones religiosas y eventos culturales que atraen visitantes de todo el país."
     ]
   }
 };
